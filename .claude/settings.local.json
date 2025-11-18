@@ -2,7 +2,21 @@
   "permissions": {
     "allow": [
       "Bash(npm run dev:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(winget install:*)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" --version)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth refresh -h github.com -s workflow)",
+      "Bash(git push:*)",
+      "Bash(git branch:*)",
+      "Bash(git config:*)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth setup-git)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" run list --limit 3)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" run view 19450436306 --log)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" run list --limit 1)",
+      "Bash(npx storybook@latest upgrade)",
+      "Bash(npm run build-storybook:*)"
     ],
     "deny": [],
     "ask": []
