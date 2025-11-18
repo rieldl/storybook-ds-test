@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phone - isometric view -->
+  <!-- Right side -->
+  <path d="M120 50L140 62L140 140L120 152L120 50Z" fill="#7B00CC"/>
+  <!-- Left side -->
+  <path d="M80 50L60 62L60 140L80 152L80 50Z" fill="#9D00FF"/>
+  <!-- Top face (screen) -->
+  <path d="M80 50L120 50L140 62L100 82L60 62L80 50Z" fill="#B366FF"/>
+
+  <!-- Screen content -->
+  <path d="M85 75L115 75L130 85L130 125L100 140L70 125L70 85L85 75Z" fill="#0F172A"/>
+
+  <!-- App UI elements on screen -->
+  <!-- Header bar -->
+  <path d="M87 80L113 80L125 87L125 95L100 107L75 95L75 87L87 80Z" fill="#FF4566"/>
+
+  <!-- Content cards -->
+  <rect x="80" y="100" width="20" height="15" fill="#4DA6FF" opacity="0.8"/>
+  <rect x="105" y="100" width="20" height="15" fill="#B4FF00" opacity="0.8"/>
+
+  <!-- Code symbols floating around -->
+  <text x="45" y="70" fill="#00FFB9" font-size="20" font-family="monospace" opacity="0.7">&lt;/&gt;</text>
+  <text x="145" y="100" fill="#FF4566" font-size="16" font-family="monospace" opacity="0.7">{}</text>
+
+  <!-- Home button -->
+  <circle cx="100" cy="145" r="4" fill="#4DA6FF"/>
+</svg>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Illustrations - SVG Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+        }
+
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            text-align: center;
+        }
+
+        .color-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-name {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .color-code {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-family: monospace;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .svg-container {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .svg-container {
+            transform: scale(1.05);
+        }
+
+        .svg-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .description {
+            font-size: 0.875rem;
+            color: #64748b;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #9D00FF 0%, #FF4566 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(157, 0, 255, 0.3);
+        }
+
+        .usage-section {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .usage-section h2 {
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+        }
+
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 0.5rem;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Aurora Illustrations</h1>
+            <p class="subtitle">Isometric Tech Illustrations with Aurora-Inspired Colors</p>
+
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #00FFB9;"></div>
+                    <div class="color-name">Aurora Green</div>
+                    <div class="color-code">#00FFB9</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #0080FF;"></div>
+                    <div class="color-name">Aurora Blue</div>
+                    <div class="color-code">#0080FF</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #9D00FF;"></div>
+                    <div class="color-name">Aurora Purple</div>
+                    <div class="color-code">#9D00FF</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #FF4566;"></div>
+                    <div class="color-name">Aurora Pink</div>
+                    <div class="color-code">#FF4566</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #00FFCC;"></div>
+                    <div class="color-name">Aurora Cyan</div>
+                    <div class="color-code">#00FFCC</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div class="svg-container">
+                    <img src="server.svg" alt="Server Infrastructure">
+                </div>
+                <h3>Server Infrastructure</h3>
+                <p class="description">Cloud infrastructure and server technology</p>
+                <a href="server.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="cloud.svg" alt="Cloud Computing">
+                </div>
+                <h3>Cloud Computing</h3>
+                <p class="description">Cloud services and data storage</p>
+                <a href="cloud.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="mobile-dev.svg" alt="Mobile Development">
+                </div>
+                <h3>Mobile Development</h3>
+                <p class="description">Mobile app development and UI</p>
+                <a href="mobile-dev.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="code.svg" alt="Code & Programming">
+                </div>
+                <h3>Code & Programming</h3>
+                <p class="description">Software development and coding</p>
+                <a href="code.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="security.svg" alt="Security">
+                </div>
+                <h3>Security</h3>
+                <p class="description">Cybersecurity and data protection</p>
+                <a href="security.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="analytics.svg" alt="Analytics">
+                </div>
+                <h3>Analytics</h3>
+                <p class="description">Data analytics and metrics</p>
+                <a href="analytics.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="database.svg" alt="Database">
+                </div>
+                <h3>Database</h3>
+                <p class="description">Data storage and databases</p>
+                <a href="database.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="api.svg" alt="API Integration">
+                </div>
+                <h3>API Integration</h3>
+                <p class="description">API connections and integrations</p>
+                <a href="api.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="deployment.svg" alt="Deployment">
+                </div>
+                <h3>Deployment</h3>
+                <p class="description">App deployment and launch</p>
+                <a href="deployment.svg" download class="download-btn">Download SVG</a>
+            </div>
+
+            <div class="card">
+                <div class="svg-container">
+                    <img src="ai.svg" alt="AI & Machine Learning">
+                </div>
+                <h3>AI & Machine Learning</h3>
+                <p class="description">Artificial intelligence and ML</p>
+                <a href="ai.svg" download class="download-btn">Download SVG</a>
+            </div>
+        </div>
+
+        <div class="usage-section">
+            <h2>💡 How to Use</h2>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">In HTML</h3>
+            <div class="code-block">
+&lt;!-- Method 1: Using img tag --&gt;
+&lt;img src="server.svg" alt="Server" width="200" height="200"&gt;
+
+&lt;!-- Method 2: Inline SVG --&gt;
+&lt;object data="server.svg" type="image/svg+xml"&gt;&lt;/object&gt;
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">In CSS</h3>
+            <div class="code-block">
+.hero {
+  background-image: url('cloud.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">In React/Vue</h3>
+            <div class="code-block">
+import ServerIcon from './server.svg';
+
+function MyComponent() {
+  return &lt;img src={ServerIcon} alt="Server" /&gt;;
+}
+            </div>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">✅</span>
+                    <span>Isometric 3D Design</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎨</span>
+                    <span>Aurora Color Palette</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📱</span>
+                    <span>Fully Responsive</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <span>Lightweight (~5-15KB)</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎭</span>
+                    <span>SVG Animations</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔧</span>
+                    <span>Easy to Customize</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

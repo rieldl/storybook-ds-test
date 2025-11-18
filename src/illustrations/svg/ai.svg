@@ -1,0 +1,80 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brain/Neural network center -->
+  <g transform="translate(100, 90)">
+    <!-- Central processing unit - isometric cube -->
+    <path d="M0 -15L25 -5L25 15L0 5L0 -15Z" fill="#7B00CC"/>
+    <path d="M0 -15L-25 -5L-25 15L0 5L0 -15Z" fill="#9D00FF"/>
+    <path d="M-25 -5L0 -15L25 -5L0 5L-25 -5Z" fill="#B366FF"/>
+
+    <!-- AI chip pattern -->
+    <g opacity="0.6">
+      <rect x="-15" y="-8" width="8" height="8" fill="#00FFB9"/>
+      <rect x="7" y="-8" width="8" height="8" fill="#FF4566"/>
+      <rect x="-15" y="2" width="8" height="8" fill="#00FFCC"/>
+      <rect x="7" y="2" width="8" height="8" fill="#0080FF"/>
+    </g>
+  </g>
+
+  <!-- Neural network nodes and connections -->
+  <!-- Input layer -->
+  <g>
+    <circle cx="40" cy="60" r="8" fill="#0080FF" opacity="0.8"/>
+    <circle cx="40" cy="90" r="8" fill="#0080FF" opacity="0.8"/>
+    <circle cx="40" cy="120" r="8" fill="#0080FF" opacity="0.8"/>
+  </g>
+
+  <!-- Hidden layer -->
+  <g>
+    <circle cx="100" cy="50" r="8" fill="#9D00FF" opacity="0.8"/>
+    <circle cx="100" cy="90" r="12" fill="#9D00FF" opacity="0.9"/>
+    <circle cx="100" cy="130" r="8" fill="#9D00FF" opacity="0.8"/>
+  </g>
+
+  <!-- Output layer -->
+  <g>
+    <circle cx="160" cy="70" r="8" fill="#00FFB9" opacity="0.8"/>
+    <circle cx="160" cy="110" r="8" fill="#00FFB9" opacity="0.8"/>
+  </g>
+
+  <!-- Connections - input to hidden -->
+  <g opacity="0.3" stroke="#00FFCC" stroke-width="2">
+    <line x1="48" y1="60" x2="92" y2="50"/>
+    <line x1="48" y1="60" x2="92" y2="90"/>
+    <line x1="48" y1="90" x2="92" y2="50"/>
+    <line x1="48" y1="90" x2="92" y2="90"/>
+    <line x1="48" y1="90" x2="92" y2="130"/>
+    <line x1="48" y1="120" x2="92" y2="90"/>
+    <line x1="48" y1="120" x2="92" y2="130"/>
+  </g>
+
+  <!-- Connections - hidden to output -->
+  <g opacity="0.3" stroke="#00FFB9" stroke-width="2">
+    <line x1="108" y1="50" x2="152" y2="70"/>
+    <line x1="108" y1="90" x2="152" y2="70"/>
+    <line x1="108" y1="90" x2="152" y2="110"/>
+    <line x1="108" y1="130" x2="152" y2="110"/>
+  </g>
+
+  <!-- Data pulse animation on connections -->
+  <g>
+    <circle r="3" fill="#FF4566">
+      <animateMotion dur="2s" repeatCount="indefinite" path="M40,60 L100,90"/>
+    </circle>
+    <circle r="3" fill="#00FFCC">
+      <animateMotion dur="2s" repeatCount="indefinite" path="M100,90 L160,70"/>
+    </circle>
+  </g>
+
+  <!-- AI Label -->
+  <g transform="translate(100, 160)">
+    <rect x="-20" y="-10" width="40" height="20" rx="10" fill="#9D00FF" opacity="0.2"/>
+    <text x="0" y="5" text-anchor="middle" fill="#9D00FF" font-size="14" font-weight="bold">AI/ML</text>
+  </g>
+
+  <!-- Learning progress indicator -->
+  <g transform="translate(30, 30)">
+    <circle r="12" fill="none" stroke="#E2E8F0" stroke-width="3"/>
+    <circle r="12" fill="none" stroke="#00FFB9" stroke-width="3" stroke-dasharray="75.4" stroke-dashoffset="18.85" transform="rotate(-90)"/>
+    <text x="0" y="4" text-anchor="middle" fill="#00FFB9" font-size="8" font-weight="bold">75%</text>
+  </g>
+</svg>

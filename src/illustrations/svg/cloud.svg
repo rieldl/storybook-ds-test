@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cloud base -->
+  <ellipse cx="100" cy="90" rx="60" ry="25" fill="#4DA6FF" opacity="0.3"/>
+
+  <!-- Main cloud body -->
+  <path d="M60 85C60 75 67 67 77 67C77 57 85 50 95 50C105 50 113 57 113 67C123 67 130 75 130 85C130 95 123 103 113 103H77C67 103 60 95 60 85Z" fill="#4DA6FF"/>
+  <path d="M60 85C60 75 67 67 77 67C77 57 85 50 95 50C105 50 113 57 113 67C123 67 130 75 130 85C130 95 123 103 113 103H77C67 103 60 95 60 85Z" fill="url(#cloudGradient)" opacity="0.6"/>
+
+  <!-- Upload/Download data boxes - isometric -->
+  <!-- Upload box (going up) -->
+  <g transform="translate(70, 110)">
+    <path d="M0 10L15 0L15 15L0 25L0 10Z" fill="#00FFB9"/>
+    <path d="M15 0L30 10L30 25L15 15L15 0Z" fill="#00D9A0"/>
+    <path d="M0 10L15 0L30 10L15 20L0 10Z" fill="#B4FF00"/>
+    <!-- Arrow up -->
+    <path d="M15 30L15 50" stroke="#00FFB9" stroke-width="2" stroke-dasharray="3 3"/>
+    <path d="M15 50L12 45L18 45L15 50Z" fill="#00FFB9" transform="rotate(180 15 47.5)"/>
+  </g>
+
+  <!-- Download box (going down) -->
+  <g transform="translate(100, 110)">
+    <path d="M0 10L15 0L15 15L0 25L0 10Z" fill="#FF4566"/>
+    <path d="M15 0L30 10L30 25L15 15L15 0Z" fill="#FF0080"/>
+    <path d="M0 10L15 0L30 10L15 20L0 10Z" fill="#FF6B8A"/>
+    <!-- Arrow down -->
+    <path d="M15 -20L15 0" stroke="#FF4566" stroke-width="2" stroke-dasharray="3 3"/>
+    <path d="M15 0L12 -5L18 -5L15 0Z" fill="#FF4566"/>
+  </g>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0080FF"/>
+      <stop offset="100%" stop-color="#00FFCC"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield base - isometric 3D effect -->
+  <!-- Right side of shield -->
+  <path d="M100 40L140 65L140 100C140 120 130 135 100 150L100 40Z" fill="#FF0080"/>
+
+  <!-- Left side of shield -->
+  <path d="M100 40L60 65L60 100C60 120 70 135 100 150L100 40Z" fill="#FF4566"/>
+
+  <!-- Top face of shield -->
+  <path d="M100 35L140 60L100 85L60 60L100 35Z" fill="#FF6B8A"/>
+
+  <!-- Lock icon on shield -->
+  <g transform="translate(100, 80)">
+    <!-- Lock body - right -->
+    <path d="M0 10L15 2L15 20L0 28L0 10Z" fill="#00D9A0"/>
+    <!-- Lock body - left -->
+    <path d="M0 10L-15 2L-15 20L0 28L0 10Z" fill="#00FFB9"/>
+    <!-- Lock body - top -->
+    <path d="M0 10L15 2L0 -6L-15 2L0 10Z" fill="#B4FF00"/>
+
+    <!-- Lock shackle -->
+    <path d="M-8 2C-8 -5 -4 -10 0 -10C4 -10 8 -5 8 2" stroke="#B4FF00" stroke-width="3" fill="none"/>
+
+    <!-- Keyhole -->
+    <circle cx="0" cy="15" r="3" fill="#0F172A"/>
+    <rect x="-1" y="15" width="2" height="6" fill="#0F172A"/>
+  </g>
+
+  <!-- Security particles/firewall effect -->
+  <g opacity="0.6">
+    <circle cx="45" cy="80" r="3" fill="#0080FF"/>
+    <circle cx="155" cy="80" r="3" fill="#0080FF"/>
+    <circle cx="70" cy="120" r="2" fill="#00FFCC"/>
+    <circle cx="130" cy="120" r="2" fill="#00FFCC"/>
+  </g>
+
+  <!-- Data streams being protected -->
+  <path d="M40 70L55 78" stroke="#0080FF" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+  <path d="M160 70L145 78" stroke="#0080FF" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Checkmark for verified security -->
+  <path d="M85 160L95 170L115 145" stroke="#00FFB9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

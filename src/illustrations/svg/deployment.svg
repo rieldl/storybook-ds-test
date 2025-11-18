@@ -1,0 +1,64 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rocket body - isometric -->
+  <g transform="translate(100, 80)">
+    <!-- Rocket nose cone -->
+    <path d="M0 -40L15 -25L15 -15L0 -20L0 -40Z" fill="#FF4566"/>
+    <path d="M0 -40L-15 -25L-15 -15L0 -20L0 -40Z" fill="#FF6B8A"/>
+
+    <!-- Main body - right side -->
+    <path d="M0 -20L15 -15L15 35L0 40L0 -20Z" fill="#0066CC"/>
+    <!-- Main body - left side -->
+    <path d="M0 -20L-15 -15L-15 35L0 40L0 -20Z" fill="#0080FF"/>
+    <!-- Main body - front -->
+    <path d="M-15 -15L15 -15L15 35L-15 35L-15 -15Z" fill="#4DA6FF"/>
+
+    <!-- Window -->
+    <circle cx="0" cy="5" r="6" fill="#66FFE6" opacity="0.8"/>
+    <circle cx="0" cy="5" r="4" fill="#00FFCC" opacity="0.3"/>
+
+    <!-- Fins - right -->
+    <path d="M15 25L30 35L30 45L15 35L15 25Z" fill="#9D00FF"/>
+    <!-- Fins - left -->
+    <path d="M-15 25L-30 35L-30 45L-15 35L-15 25Z" fill="#B366FF"/>
+
+    <!-- Engine fire/exhaust -->
+    <g opacity="0.9">
+      <!-- Flame 1 -->
+      <path d="M-8 40L-8 55L-3 50L-8 40Z" fill="#FF4566">
+        <animate attributeName="d" values="M-8 40L-8 55L-3 50L-8 40Z;M-8 40L-8 60L-3 52L-8 40Z;M-8 40L-8 55L-3 50L-8 40Z" dur="0.5s" repeatCount="indefinite"/>
+      </path>
+      <!-- Flame 2 -->
+      <path d="M0 40L0 58L5 52L0 40Z" fill="#00FFB9">
+        <animate attributeName="d" values="M0 40L0 58L5 52L0 40Z;M0 40L0 62L5 54L0 40Z;M0 40L0 58L5 52L0 40Z" dur="0.4s" repeatCount="indefinite"/>
+      </path>
+      <!-- Flame 3 -->
+      <path d="M8 40L8 55L3 50L8 40Z" fill="#FF4566">
+        <animate attributeName="d" values="M8 40L8 55L3 50L8 40Z;M8 40L8 60L3 52L8 40Z;M8 40L8 55L3 50L8 40Z" dur="0.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Launch pad - isometric platform -->
+  <g transform="translate(100, 140)">
+    <path d="M0 0L40 -20L40 -15L0 5L0 0Z" fill="#E2E8F0"/>
+    <path d="M0 0L-40 -20L-40 -15L0 5L0 0Z" fill="#1E293B"/>
+    <path d="M-40 -20L0 -40L40 -20L0 0L-40 -20Z" fill="#F8FAFC"/>
+  </g>
+
+  <!-- Smoke/clouds -->
+  <g opacity="0.4">
+    <ellipse cx="80" cy="155" rx="20" ry="8" fill="#E2E8F0"/>
+    <ellipse cx="120" cy="155" rx="20" ry="8" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Stars/sparkles -->
+  <g opacity="0.7">
+    <circle cx="40" cy="40" r="2" fill="#00FFB9"/>
+    <circle cx="160" cy="50" r="2" fill="#FF4566"/>
+    <circle cx="170" cy="30" r="2" fill="#00FFCC"/>
+    <circle cx="30" cy="70" r="2" fill="#9D00FF"/>
+  </g>
+
+  <!-- Deploy indicator -->
+  <text x="100" y="30" text-anchor="middle" fill="#00FFB9" font-size="14" font-weight="bold" opacity="0.8">DEPLOY</text>
+</svg>
